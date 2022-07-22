@@ -1,12 +1,12 @@
 let pronoun = ["the", "our"];
 let adj = ["great", "big"];
 let noun = ["jogger", "racoon"];
-let mixedArray = [];
+let mixedArr = [];
 
-mixedArray.push(...pronoun, ...adj, ...noun);
-
-for(let i = 0; i < mixedArray.length; i++){
-    console.log(mixedArray[i])
-}
-
-console.log(mixedArray);
+mixedArr.push(pronoun, adj, noun);
+console.log(mixedArr)
+for(i = 0; i<mixedArr.length; i++){
+    for(k =0; k<mixedArr.length; k++){
+        console.log(mixedArr[i][k]);
+        }
+    }
